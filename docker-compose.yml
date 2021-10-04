@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  agendatel:
+    image: mariadb:10.4.13
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: agenda
+      MYSQL_DATABASE: agenda
+      #      volumes:
+      #- escola:/var/lib/mysql
+      #volumes:
+      #  escola:
